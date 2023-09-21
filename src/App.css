@@ -1,38 +1,107 @@
-.App {
-  text-align: center;
+*{
+    box-sizing: border-box;
+}
+body{
+    background: #eee;
+    padding: 0 16px;
+    
+}
+.title
+{
+    padding: 1.4rem;
+    margin: auto -16px;
+    background-color: rgb(237, 188, 10);
+    box-shadow: 0 0 15px 0 rgb(156, 155, 153);
+}
+.h1_title{
+    font-weight: 400;
+    font-family:"Mclaren",cursive;
+    color: white;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+footer{
+    position: relative;
+    text-align: center;
+    bottom: 0;
+    width: 100%;
+    height: 2.5rem;
+    margin: auto -16px;
 }
-
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
+.paraend{
+    color: #ccc;
 }
-
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
+.note{
+    position:relative;
+    color: white;
+    background: rgb(0,0,0);
+    background: linear-gradient(162deg, rgba(0,0,0,1) 40%, rgba(0,0,0,1) 43%, rgba(184,144,8,1) 100%);
+    border-radius: 7px;
+    box-shadow: 10px 10px 5px rgb(193, 191, 191);
+    width: 240px;
+    margin: 16px;
+    padding: 10px;
+    float: left;
 }
-
-.App-link {
-  color: #61dafb;
+.note h1{
+    font-size: 1.1rem;
+    margin-bottom: 6px;
 }
-
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+.note p{
+    font-size: 1.1rem;
+    margin-bottom: 10px;
+    white-space: pre-wrap;
+    word-wrap: break-word;
+}
+.Content_area{
+    display:flex;
+    justify-content:flex-start;
+    flex-wrap: wrap;
+    margin: 2rem 10rem;/*auto so that flex can decide what margin to give on left right so that responsiveness is good*/
+    max-width:90%;
+}
+.note button{
+    position: absolute;
+    right:-10px;
+    bottom:-10px;
+    background: #f5ba13;
+    color: #fff;
+    border:none;
+    border-radius: 50%;
+    width:36px;
+    height:36px;
+    box-shadow: 0 1px 3px rgba(0,0,0,0.3);
+    cursor: pointer;
+    outline:none;
+}
+form{
+    background-color: whit;
+    position:relative;
+    margin:30px auto 20px auto;
+    width:480px;
+    padding:15px;
+    border-radius: 7px;
+    box-shadow: 0 1px 5px rgb(138, 137, 137);
+}
+form input,textarea{
+    width:100%;
+    border:none;
+    outline: none;
+    font-size: 1.2rem;
+    padding: 4px;
+    font-family: inherit;
+    resize:none;
+}
+form button{
+    position: absolute;
+    right:18px;
+    bottom:-18px;
+    background: #f5ba13;
+    color: #fff;
+    border:none;
+    border-radius: 50%;
+    width:36px;
+    height:36px;
+    box-shadow: 0 1px 3px rgba(0,0,0,0.3);
+    cursor: pointer;
+    outline:none;
 }

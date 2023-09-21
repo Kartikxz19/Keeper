@@ -1,5 +1,9 @@
 ![image](https://github.com/Kartikxz19/Keeper/assets/107644849/b33487ce-5f3d-45d1-ab21-aa1c0f8c2179)
-
+# REACT based Note taking app. 
+# KEEPER 
+This is a react-based frontend, notetaking app. 
+In this, various components,useState hook have been implemented.
+Styling implemented using MaterialUI core and icons. 
 # Getting Started with Create React App
 
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).

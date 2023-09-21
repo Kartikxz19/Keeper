@@ -2,9 +2,9 @@
     box-sizing: border-box;
 }
 body{
-    background: #eee;
+    background-color: #171717;
+    background-image: url("../assets/axiom-pattern.png");
     padding: 0 16px;
-    
 }
 .title
 {
@@ -36,7 +36,7 @@ footer{
     background: rgb(0,0,0);
     background: linear-gradient(162deg, rgba(0,0,0,1) 40%, rgba(0,0,0,1) 43%, rgba(184,144,8,1) 100%);
     border-radius: 7px;
-    box-shadow: 10px 10px 5px rgb(193, 191, 191);
+    box-shadow: 10px 10px 5px rgb(105, 104, 104);
     width: 240px;
     margin: 16px;
     padding: 10px;
@@ -73,8 +73,8 @@ footer{
     cursor: pointer;
     outline:none;
 }
-form{
-    background-color: whit;
+form.create-form{
+    background-color: white;
     position:relative;
     margin:30px auto 20px auto;
     width:480px;
@@ -82,7 +82,7 @@ form{
     border-radius: 7px;
     box-shadow: 0 1px 5px rgb(138, 137, 137);
 }
-form input,textarea{
+form.create-form input,textarea{
     width:100%;
     border:none;
     outline: none;
@@ -91,7 +91,7 @@ form input,textarea{
     font-family: inherit;
     resize:none;
 }
-form button{
+form.create-form button{
     position: absolute;
     right:18px;
     bottom:-18px;

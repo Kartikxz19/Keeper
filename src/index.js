@@ -1,8 +1,9 @@
 import React, { StrictMode } from 'react';
 import ReactDOM from 'react-dom/client';
 import App from './components/App';
-import './App.css';
 import 'bootstrap/dist/css/bootstrap.css';
+import './App.css';
+//Always import custom styles after bootstrap styles..not that we are ever gonna use it ;) Material UI OP
 
 const root = ReactDOM.createRoot(document.getElementById('root'));
 root.render(

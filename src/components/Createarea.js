@@ -1,4 +1,7 @@
 import {useState} from "react";
+import Fab from '@mui/material/Fab';
+import AddBoxIcon from '@mui/icons-material/AddBox';
+import Zoom from '@mui/material/Zoom';
 function Createarea(props)
 {
     const [create,setCreate]=useState({title:"",text:""});
@@ -23,20 +26,42 @@ function Createarea(props)
         setCreate({title:"",text:""});
         event.preventDefault();
     }
+    const [textareaClicked,setClicked]=useState(false);
+    function click()
+    {
+        setClicked(!textareaClicked);
+    }
     return(
         
         <div>
-            <form>
-                <input onChange={handleChange} name="title" placeholder="Title" value={create.title}></input>
+            <form className="create-form">
+                <input onChange={handleChange} 
+                        name="title"
+                        placeholder="Title" 
+                        value={create.title} 
+                        style={{display:textareaClicked?null:"none"}}
+                ></input>
                 <textarea
+                onClick={click}
+                
                  onChange={handleChange} 
                  name="text" 
                  placeholder="Enter text..." 
                  value={create.text}
+                 rows={textareaClicked?3:1}
                  >
     
                  </textarea>
-                <button onClick={update}>Add</button>
+                 <div>
+                    
+                 </div>
+                 <Zoom in={textareaClicked?true:false} >
+                    <Fab
+                    style={{display:textareaClicked?null:"none"}} 
+                    onClick={update}
+                    ><AddBoxIcon/></Fab>
+                 </Zoom>
+                
             </form>
         </div>
     )
